@@ -1,4 +1,7 @@
-.home{
-    background-color: rebeccapurple;
-    color: white;
+.home {
+    display: flex;
+
+    .homeContainer {
+        flex: 2;
+    }
 }
