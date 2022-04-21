@@ -15,7 +15,7 @@ import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 const Sidebar = () => {
   return <div className="sidebar">
     <div className="top">
-      <span className="logo">admin portal</span>
+      <span className="logo">Admin panel</span>
     </div>
     <hr />
     <div className="center">
