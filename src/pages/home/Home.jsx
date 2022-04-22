@@ -4,6 +4,8 @@ import Navbar from "../../components/navbar/Navbar";
 import Widget from "../../components/widget/Widget";
 import Featured from "../../components/featured/Featured";
 import Chart from "../../components/chart/Chart";
+import List from "../../components/list/List";
+
 const Home = () => {
   return (
     <div className="home">
@@ -19,6 +21,10 @@ const Home = () => {
         <div className="charts">
           <Featured />
           <Chart title="Last 6 Months (Revenue)" aspect={2 / 1} />
+        </div>
+        <div className="listContainer">
+          <div className="listTitle">Latest Transactions</div>
+          <List />
         </div>
       </div>
     </div>
