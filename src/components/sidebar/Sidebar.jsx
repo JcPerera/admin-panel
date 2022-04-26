@@ -11,12 +11,15 @@ import BookIcon from "@mui/icons-material/Book";
 import SettingsIcon from "@mui/icons-material/Settings";
 import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">Admin panel</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span className="logo">lamadmin</span>
+        </Link>
       </div>
       <hr />
       <div className="center">
@@ -26,15 +29,19 @@ const Sidebar = () => {
             <DashboardIcon className="icon" />
             <span>Dashboard</span>
           </li>
-          <p className="title">LIST</p>
-          <li>
-            <PersonIcon className="icon" />
-            <span>Users</span>
-          </li>
-          <li>
-            <StoreIcon className="icon" />
-            <span>Products</span>
-          </li>
+          <p className="title">LISTS</p>
+          <Link to="/users" style={{ textDecoration: "none" }}>
+            <li>
+              <PersonIcon className="icon" />
+              <span>Users</span>
+            </li>
+          </Link>
+          <Link to="/products" style={{ textDecoration: "none" }}>
+            <li>
+              <StoreIcon className="icon" />
+              <span>Products</span>
+            </li>
+          </Link>
           <li>
             <CreditCardIcon className="icon" />
             <span>Orders</span>
@@ -43,8 +50,7 @@ const Sidebar = () => {
             <LocalShippingIcon className="icon" />
             <span>Delivery</span>
           </li>
-          <p className="title">USEFUL LINKS</p>
-
+          <p className="title">USEFUL</p>
           <li>
             <AssessmentIcon className="icon" />
             <span>Stats</span>
@@ -52,6 +58,8 @@ const Sidebar = () => {
           <li>
             <NotificationsActiveIcon className="icon" />
             <span>Notification</span>
+
+            <span>Notifications</span>
           </li>
           <p className="title">SERVICE</p>
           <li>
@@ -67,7 +75,6 @@ const Sidebar = () => {
             <span>Settings</span>
           </li>
           <p className="title">USER</p>
-
           <li>
             <PermContactCalendarIcon className="icon" />
             <span>Profile</span>
