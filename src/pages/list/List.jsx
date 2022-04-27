@@ -1,13 +1,11 @@
-import "./list.scss"
+import "./list.scss";
 import Datatable from "../../components/datatable/Datatable";
 const List = () => {
   return (
     <div className="list">
-      <div className="listContainer">
-        <Datatable />
-      </div>
+      <Datatable />
     </div>
-  )
-}
+  );
+};
 
-export default List
+export default List;
