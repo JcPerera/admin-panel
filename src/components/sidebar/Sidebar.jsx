@@ -28,10 +28,12 @@ const Sidebar = () => {
       <div className="center">
         <ul>
           <p className="title">MAIN</p>
-          <li>
-            <DashboardIcon className="icon" />
-            <span>Dashboard</span>
-          </li>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <li>
+              <DashboardIcon className="icon" />
+              <span>Dashboard</span>
+            </li>
+          </Link>
           <p className="title">LISTS</p>
           <Link to="/users" style={{ textDecoration: "none" }}>
             <li>
@@ -61,8 +63,6 @@ const Sidebar = () => {
           <li>
             <NotificationsActiveIcon className="icon" />
             <span>Notification</span>
-
-            <span>Notifications</span>
           </li>
           <p className="title">SERVICE</p>
           <li>
